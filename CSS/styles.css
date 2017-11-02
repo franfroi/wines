@@ -1,0 +1,369 @@
+html, body{
+    height: 100%;
+    margin: 0px ;
+    background-color: #6f8df1;
+ 
+}
+
+#Title{
+    width: 100%;
+    height:5%; 
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:rgb(64, 17, 117);
+    font-weight:bold;
+    text-align: center;
+
+}
+#Page{
+   width: 100%;
+   display: flex;
+}
+
+#Left{
+    width: 50%;
+    margin-top:50px;
+    margin-left: 25px;
+    height:auto;
+}
+.winepalace{
+    max-width: 100%;
+    height: auto;
+    border: 2px solid rgb(74, 10, 90);
+    border-radius: 8px;
+  
+}
+#Right{
+
+    width: 50%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+}
+
+
+
+fieldset {
+       
+        border:1px solid rgb(247, 243, 243);
+        width: 60%;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+       
+}
+
+legend {
+        color:rgb(64, 17, 117);
+        font-weight:bold;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+}
+label {
+    margin-top:10px;
+    margin-bottom: 10px;
+    display:inline-block;
+    width: 100px;
+    color: white;
+}
+#cat{
+    width: 30%;
+    margin-left: 25px;
+    margin-top: 50px;
+    padding: 25px ;
+    border-right: 1px white solid;
+    height: 80%;
+    display: none;
+
+}
+
+.container-cat{
+    width:90px;
+    height: 160px; 
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 40px;
+    
+   
+}
+
+
+.rouge{
+   
+  background-color:rgb(133, 11, 11); 
+ 
+    
+}
+.rose{
+    background-color: rgba(204, 0, 255, 0.616);
+}
+.blanc{
+    background-color: rgba(217, 255, 0, 0.781);
+}
+
+
+.button{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(49, 19, 42);
+    text-align: center ;
+    color: rgb(248, 242, 242);
+    line-height: 50px;
+    display: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    }
+
+#oneproduct{
+    position: absolute;
+    top:100px;
+    left: 500px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(120, 32, 155);
+    display: none;
+    border-radius: 8px  ;
+    border: solid 2px rgb(41, 37, 37);
+    padding: 10px 10px 10px 10px;
+   
+    
+}
+
+.closeDiv{
+    position: absolute;
+    top:110px;
+    left:700px;
+    width: 10px;
+    height: 10px;
+    color: rgb(250, 14, 14);
+   display: none;
+   cursor: pointer;
+
+}
+
+
+.boutVin{
+    margin-top: 10px;
+  width: 56px;
+  height:115px;
+  
+}
+
+#h1{
+    color: white;
+    display: none;
+    font-size: 32px;
+}
+#h2{
+    color: white;
+    display: none;
+    font-size: 32px;
+}
+#product-list{
+   
+    width: 30%;
+    margin-left: 25px;
+    margin-top: 50px;
+    padding: 25px ;
+    border-right: 1px white solid;
+    height: 80%;
+    display: none;
+   
+
+}
+
+.item{
+    cursor: pointer;
+    color: rgb(87, 76, 76);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:rgb(107, 44, 136); 
+    border:0 none;
+    cursor:pointer;
+    /* -webkit-border-radius: 5px; */
+    border-radius: 5px; 
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+input[type=text] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    /* -webkit-border-radius: 5px; */
+    border-radius: 5px; 
+    margin-bottom: 10px;
+
+
+  
+}
+input[type=submit]:hover {
+
+    color:#ccc; 
+   
+  
+}
+
+.error{
+    color: rgb(145, 32, 32);
+    margin-top: 10px;
+   
+}
+#errorName{
+    display: none;
+}
+
+#errorPassword{
+    display: none;
+}
+#errorVendor{
+    display: none;
+}
+
+ @media only screen and (max-width: 768px) {
+        #Left{
+            display: none;
+            
+        }
+        #Right{
+            width: 100%;
+        
+        }
+        body{
+            background-color: rgba(149, 161, 37, 0.473);
+        }
+        fieldset{
+            
+            border:1px solid rgb(114, 47, 47);
+            width: 80%;
+            border-radius: 8px;
+            background-color: rgba(48, 17, 19, 0.555);
+            font-size: 20px;
+            
+        }
+
+        input[type=submit] {
+
+            background-color: rgb(100, 93, 100);
+            color: rgb(248, 242, 242);
+        
+            
+        }
+        #Title{
+            font-size: 40px;
+        }
+
+        .error{
+            color: rgb(19, 63, 48);
+        
+        
+        }
+        #cat{
+        border:none;
+        }
+
+        .button{
+            position: absolute;
+            top:90%;
+        left:70% ;
+        
+            
+            }
+            #cat{
+                width:100%;
+                margin:0;
+                padding: 0;
+                margin-top: 5%;
+                
+            
+                
+            
+            }
+            .container-cat{
+                width:45%;
+                height:160px; 
+                border-radius: 8px;
+                text-align: center;
+                color: white;
+                margin-top: 5px;
+                cursor: pointer;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #h1{
+                margin-left: 5%;
+                color: rgb(195, 212, 168);
+                display: block;
+                font-size: 32px;
+            }
+            #h2{
+                margin-left: 5%;
+                color: rgb(195, 212, 168);
+                display: block;
+                font-size: 32px;
+            }
+
+            #product-list{
+                
+                width:100%;
+                margin:0;
+                padding: 0;
+                margin-top: 5%;
+                border:none;
+                
+            
+            }
+
+            #products{
+                text-align: center;
+            }
+
+            #oneproduct{
+                position: absolute;
+                top:150px;
+                left: 90px;
+                width: 200px;
+                height: 200px;
+                background-color: rgb(120, 32, 155);
+            
+                border-radius: 8px  ;
+                border: solid 2px rgb(41, 37, 37);
+            
+            }
+            
+            .closeDiv{
+                position: absolute;
+                top:155px;
+                left:300px;
+                width: 10px;
+                height: 10px;
+                color: rgb(250, 14, 14);
+               display: none;
+               cursor: pointer;
+            
+            }  
+        
+}
+
+
+

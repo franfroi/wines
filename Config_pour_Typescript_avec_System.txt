@@ -1,0 +1,28 @@
+-> npm init
+-> npm install typescript --save-dev
+-> npm install systemjs --save-dev
+
+->tsconfig.json : 
+{
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "pretty":true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "rootDir":"TS",
+        /*"outDir":"JS"*/
+        "outFile":"JS/main.js"
+    }
+}
+
+->index.html
+    <script src="path/to/node_modules/systemjs/dist/system.js"></script>
+    <script src="path/to/main.js"></script>
+    <script>
+        System.import('main')
+          .catch(function(err){ console.error(err); });
+    </script>
+
+-> console : tsc

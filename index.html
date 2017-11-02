@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Typescript vin </title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+<section id="Title">Wine Palace</section>
+
+<section id="Page">
+
+            <section id="Left">
+            <img src="img/wine-palace.jpg" class="winepalace" >
+            </section>
+
+
+    <section id="Right">
+           
+
+        <fieldset>
+
+            <form  id="form">    
+                    <legend>Login</legend>
+                    <label for="name"> Name </label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <br>
+                    <span id="errorName" class="error">Minimun 3 caracters</span>
+                    <br>
+
+                    <label for="upassword"> Password </label>
+                    <input type="text" id="upassword" placeholder="Your password">
+                    <br>
+                    <span id="errorPassword" class="error">Minimun 3 caracters </span>
+                    <br>
+                    <span id="errorVendor" class="error">Vendor not exist</span>
+                <input type="submit" value="Login">
+            
+            </form>  
+        </fieldset>
+    </section>
+</section>
+            <div id="button_deconnexion" class="button">Disconnect</div>
+            <div id="cat">
+            <h1 id="h1">Categories </h1>
+            
+            </div>
+
+            <section id="product-list">
+                    <h1 id="h2">Produits </h1>
+                <div  id="products">
+                    
+                </div>
+               
+                <div id="oneproduct"></div>
+                <div id="button" class="button">Retour</div>
+    
+
+ </section>
+ <div class="closeDiv">x</div>
+ 
+                
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="Library/jquery-3.2.1.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+        System.import('main')
+          .catch(function(err){ console.error(err); });
+    </script>
+</body>
+</html>
